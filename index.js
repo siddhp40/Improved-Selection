@@ -9,3 +9,8 @@ document.addEventListener("keydown", (event) => {
         userClipboard.writeText("");
     }
 });
+function newHotkey(){
+    const clearStackHotkeyButton = document.getElementById("clearClipboardStackHotkey");
+    clearStackHotkeyButton.textContent = 'Recording';
+}
+
