@@ -1,23 +1,23 @@
 {
   "author": "Siddh Parikh",
   "manifest_version": 3,
-  "name": "Improved Selection",
-  "description": "Changes the default selection tool on all websites",
-  "version": "1.0.1",
-  "content_scripts": [
-    {
-        "matches":["<all_urls>"],
-        "js": ["index.js"]
+  "name": "Smart Clipboard",
+  "description": "Adds a hotkey to add copied elements to a stack",
+  "version": "1.1.0",
+  "background":{"service_worker": "background.js"},
+  "permissions": ["clipboardRead", "clipboardWrite", "activeTab", "commands", "scripting", "storage"],
+  "commands":{
+    "add-to-stack":{
+      "suggested_key":{
+        "default": "Ctrl+Shift+V"
+      },
+      "description":"Add selection to stack"
     }
-  ],
-  "permissions": [
-    "clipboardRead",
-    "clipboardWrite",
-    "activeTab"
-  ],
+  },
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
+      "128": "images/icon128.png",
+      "64": "images/icon64.png",
       "32": "images/icon32.png",
       "16": "images/icon16.png"
     }
