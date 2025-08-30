@@ -1,0 +1,81 @@
+:root{
+    --base-color: hsl(0, 0%, 20%);
+    --base-variant: hsl(0, 0%, 30%);
+    --secoundary-color: hsl(0, 0%, 40%);
+    --text-color: hsl(0, 0%, 100%);
+    --primary-color: hsl(0, 0%, 100%);
+
+}
+.lightmode{
+    --base-color: hsl(312, 38%, 95%);
+    --base-variant: hsl(0, 0%, 100%);
+    --secoundary-color: hsl(0, 0%, 90%);
+    --text-color: hsl(0, 0%, 0%);
+    --primary-color: hsl(0, 0%, 0%) ;
+}
+#chromeExtensionTitle{
+    display: inline-block;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#theme-switch{
+    display: flex;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 45px;
+    right: 40px;
+}
+#theme-switch:hover{
+    background-color: var(--secoundary-color);
+    cursor: pointer;
+}
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+#theme-switch svg:first-child{
+    display: none;
+}
+.lightmode #theme-switch svg:last-child{
+    display: none;
+}
+.lightmode #theme-switch svg:first-child{
+    display: block;
+}
+#userClipboardTextArea{
+    font-size: 18px;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    height: 600px;
+    background: var(--base-variant);
+    color: var(--text-color);
+}
+#extensionDescription{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+#allReferences > p{
+    padding-right: 15px;
+}
+#allReferences{
+    display: flex;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a.allHyperlinks{
+    color: hsl(223, 100%, 65%);
+}
+body{
+    padding-left: 40px;
+    background: var(--base-color);
+    color: var(--primary-color)
+}
