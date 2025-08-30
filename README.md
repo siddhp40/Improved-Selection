@@ -9,3 +9,7 @@ To change the hotkey visit chrome://extensions and click on "Keyboard Shortcut" 
 ## Privacy
 
 Smart Clipboard does not collect any data or personal information, Any user settings will be saved locally.
+
+## Requests
+
+To request any features please send an email to siddhp40@gmail.com
