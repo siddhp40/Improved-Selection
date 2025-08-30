@@ -12,4 +12,4 @@ Smart Clipboard does not collect any data or personal information, Any user sett
 
 ## Requests
 
-To request any features please send an email to siddhp40@gmail.com
+To request any features please send an email to siddhp40@gmail.com.
