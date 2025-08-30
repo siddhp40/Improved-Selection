@@ -8,7 +8,10 @@ chrome.commands.onCommand.addListener(async (command) => {
                 files: ['content.js']
             });
         }catch(error){
-            console.error("Tab is not the active tab");
+            console.log("Tab is not the active tab");
         }
     }
+});
+chrome.action.onClicked.addListener(async (tab) => {
+    chrome.tabs.create({url: 'popup.html'});
 });
